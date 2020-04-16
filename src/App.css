@@ -1,0 +1,160 @@
+.master-head{
+  font-size: 4em;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: .4em;
+  top: 0;
+  left: 0;
+}
+.grid-container {
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  display: flex;
+  max-width: 50em;
+  margin: .5em auto 0;
+  padding: 0 2em;
+}
+.grid-item1 {
+  text-align: center;
+  background-color: blue;
+  text-shadow: -1px 1px #ff0000;
+  transition: width 2s, height 2s, transform 2s;
+}
+.grid-item1:hover,
+.grid-item1:focus{
+  transform: rotate(-4deg) scale(.9);
+  box-shadow: -2px -2px 2px grey;
+}
+.grid-item2 {
+  text-align: center;
+  background-color: yellow;
+  text-shadow: -1px 1px #0822ff;
+  transition: width 2s, height 2s, transform 2s;
+}
+.grid-item2:hover,
+.grid-item2:focus{
+  transform: rotate(4deg);
+  box-shadow: -2px -2px 2px grey;
+}
+.grid-item3 {
+  text-align: center;
+  background-color: red;
+  text-shadow: -1px 1px #fffe07;
+  transition: width 2s, height 2s, transform 2s;
+}
+.grid-item3:hover,
+.grid-item3:focus{
+  transform: rotate(-4deg) scale(1.1);
+  box-shadow: -2px -2px 2px grey;
+}
+
+.grid-item4 {
+  text-align: center;
+  background-color: pink;
+  text-shadow: -1px 1px #0000cc;
+  transition: width 2s, height 2s, transform 2s;
+}
+.grid-item4:hover,
+.grid-item4:focus{
+  transform: rotate(4deg) scale(1.1);
+  box-shadow: -2px -2px 2px grey;
+}
+
+.grid-item5 {
+  text-align: center;
+  background-color: #8cb43c;
+  text-shadow: -1px 1px #3A3A3A;
+  transition: width 2s, height 2s, transform 2s;
+}
+.grid-item5:hover,
+.grid-item5:focus{
+  transform: rotate(-4deg) scale(1.1);
+  box-shadow: -2px -2px 2px grey;
+}
+
+.game {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.body {
+  display: flex;
+}
+
+.help {
+  margin-left: auto;
+  padding: 1em 0 0;
+  font-size: 1.1em;
+  text-align: center;
+  font-style: normal;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1.4em;
+}
+
+.left {
+  text-align: center;
+  width: 50%;
+  border-style: inset;
+}
+
+.right {
+  text-align: center;
+  padding: 10px;
+  width: 50%;
+  border-style: inset;
+}
+
+.star {
+  display: inline-block;
+  color: #0A246A;
+  margin: 0 15px;
+}
+
+.star:after {
+  content: "\272F";
+  font-size: 45px;
+}
+
+button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  /*color: white;*/
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.number {
+  background-color: #eee;
+  border: thin solid #ddd;
+  width: 45px;
+  height: 45px;
+  margin: 10px;
+  font-size: 25px;
+}
+
+.number:focus, .number:active {
+  outline: none;
+  border: thin solid #ddd;
+}
+
+.timer {
+  font-size: 1.5em;
+  color: #666;
+  margin-top: 3px;
+  margin-left: 3px;
+  font-family: 'Playfair Display', serif;
+}
+
+.game-done .message {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 15px;
+}
